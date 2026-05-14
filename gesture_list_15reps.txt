@@ -1,0 +1,69 @@
+# ===================================
+# GESTURE LIST - 15 REPETITIONS (KATA + FRASA)
+# Format: CATEGORY,gesture_label
+# Total: 48 gestures (35 KATA + 13 FRASA)
+# Repetition per gesture: 15x
+# Total samples: 48 × 15 = 720
+# ===================================
+
+# ===== KATA (35) =====
+KATA,makan
+KATA,rumah
+KATA,pergi
+KATA,pulang
+KATA,kamu
+KATA,kerja
+KATA,kakek
+KATA,saya
+KATA,mereka
+KATA,adik
+KATA,senang
+KATA,tidak
+KATA,sekarang
+KATA,sekolah
+KATA,sudah
+KATA,di
+KATA,minum
+KATA,dia
+KATA,kakak
+KATA,ibu
+KATA,bapak
+KATA,nenek
+KATA,datang
+KATA,lihat
+KATA,rumah sakit
+KATA,sakit
+KATA,lelah
+KATA,dengar
+KATA,belum
+KATA,mau
+KATA,sedih
+KATA,marah
+KATA,bermain
+KATA,belajar
+KATA,menangis
+
+# ===== FRASA (13) =====
+FRASA,namamu siapa
+FRASA,perkenalkan nama saya
+FRASA,assalamualaikum warahmatullahi wabarakatuh
+FRASA,waalaikumsalam warahmatullahi wabarakatuh
+FRASA,selamat datang
+FRASA,apa kabar
+FRASA,terima kasih
+FRASA,sama sama
+FRASA,maaf
+FRASA,sampai jumpa
+FRASA,hati hati
+FRASA,lama tidak bertemu
+FRASA,tidak tahu
+
+# ===================================
+# STATISTICS
+# ===================================
+# Total gestures: 48 (35 KATA + 13 FRASA)
+# Repetition per gesture: 15x
+# Total samples: 720
+# Recording time per gesture: ~15-20 menit
+# Total recording time: ~8.75-11.6 jam
+# ===================================

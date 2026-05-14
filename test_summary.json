@@ -1,0 +1,12 @@
+{
+  "total_gestures": 136,
+  "overall_accuracy": 0.9562043795620438,
+  "best_accuracy": 1.0,
+  "worst_accuracy": 0.0,
+  "mean_accuracy": 0.9558823529411765,
+  "median_accuracy": 1.0,
+  "avg_confidence": 0.9436748027801514,
+  "confidence_threshold": 0.72,
+  "samples_above_threshold": 130,
+  "threshold_pass_rate": 94.8905109489051
+}

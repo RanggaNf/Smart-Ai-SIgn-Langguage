@@ -1,0 +1,403 @@
+# ===================================
+# SMART GLOVE - GESTURE LIST (SIBI - COMPREHENSIVE)
+# Total: 242 Gestures
+# - ANGKA: 34
+# - HURUF: 26
+# - GRAMMAR ELEMENTS: 67 (Pronoun, Demonstrativa, Preposisi, Konjungsi, Imbuhan, Possessive)
+# - KATA DASAR: 110 (Kerja, Benda, Sifat, Emosi, Kondisi)
+# - FRASA: 25 (hanya gesture identik unik)
+# ===================================
+
+# ===== ANGKA (34) =====
+# Basic digits (0-9)
+ANGKA,0
+ANGKA,1
+ANGKA,2
+ANGKA,3
+ANGKA,4
+ANGKA,5
+ANGKA,6
+ANGKA,7
+ANGKA,8
+ANGKA,9
+# Teens (10-19)
+ANGKA,10
+ANGKA,11
+ANGKA,12
+ANGKA,13
+ANGKA,14
+ANGKA,15
+ANGKA,16
+ANGKA,17
+ANGKA,18
+ANGKA,19
+# Tens (20-90)
+ANGKA,20
+ANGKA,30
+ANGKA,40
+ANGKA,50
+ANGKA,60
+ANGKA,70
+ANGKA,80
+ANGKA,90
+# Hundreds
+ANGKA,100
+
+# ===== HURUF (26) =====
+HURUF,A
+HURUF,B
+HURUF,C
+HURUF,D
+HURUF,E
+HURUF,F
+HURUF,G
+HURUF,H
+HURUF,I
+HURUF,J
+HURUF,K
+HURUF,L
+HURUF,M
+HURUF,N
+HURUF,O
+HURUF,P
+HURUF,Q
+HURUF,R
+HURUF,S
+HURUF,T
+HURUF,U
+HURUF,V
+HURUF,W
+HURUF,X
+HURUF,Y
+HURUF,Z
+
+# ===== PRONOUN (8) =====
+# Kata ganti orang dengan gerakan spesifik
+KATA,saya
+KATA,aku
+KATA,kamu
+KATA,dia
+KATA,kami
+KATA,kita
+KATA,mereka
+KATA,anda
+
+# ===== DEMONSTRATIVA (4) =====
+# Kata penunjuk dengan gerakan ke bawah/jauh
+KATA,ini
+KATA,itu
+KATA,sini
+KATA,sana
+
+# ===== PREPOSISI (8) =====
+# Kata depan dengan gerakan arah
+KATA,di
+KATA,ke
+KATA,dari
+KATA,atas
+KATA,bawah
+KATA,dalam
+KATA,samping
+KATA,depan
+
+# ===== KONJUNGSI (7) =====
+# Kata hubung dengan gesture spesifik
+KATA,dan
+KATA,atau
+KATA,tapi
+KATA,karena
+KATA,sehingga
+KATA,jika
+KATA,bahwa
+
+# ===== KATA-KERJA TUBUH (12) =====
+# Gerakan fisik fundamental
+KATA,makan
+KATA,minum
+KATA,tidur
+KATA,bangun
+KATA,mandi
+KATA,duduk
+KATA,berdiri
+KATA,jalan
+KATA,lari
+KATA,melompat
+KATA,menari
+KATA,berlari
+
+# ===== KATA-KERJA AKTIVITAS (15) =====
+# Aktivitas dengan gesture spesifik
+KATA,pergi
+KATA,pulang
+KATA,datang
+KATA,bekerja
+KATA,belajar
+KATA,bermain
+KATA,membaca
+KATA,menulis
+KATA,menyanyi
+KATA,menggambar
+KATA,menonton
+KATA,mendengarkan
+KATA,berbicara
+KATA,bertanya
+KATA,menjawab
+
+# ===== KATA-KERJA MENTAL (12) =====
+# Proses mental dengan gesture khusus
+KATA,mengerti
+KATA,tidak mengerti
+KATA,lupa
+KATA,ingat
+KATA,berpikir
+KATA,setuju
+KATA,tidak setuju
+KATA,percaya
+KATA,tahu
+KATA,tidak tahu
+KATA,paham
+KATA,gembira
+
+# ===== KATA-BENDA KELUARGA (8) =====
+# Anggota keluarga dengan gesture identik
+KATA,ayah
+KATA,ibu
+KATA,kakak
+KATA,adik
+KATA,kakek
+KATA,nenek
+KATA,anak
+KATA,keluarga
+
+# ===== KATA-BENDA TEMPAT (12) =====
+# Lokasi dengan gesture visual
+KATA,rumah
+KATA,sekolah
+KATA,kantor
+KATA,pasar
+KATA,toko
+KATA,rumah sakit
+KATA,masjid
+KATA,gereja
+KATA,taman
+KATA,pantai
+KATA,gunung
+KATA,laut
+
+# ===== KATA-BENDA MAKANAN (10) =====
+# Makanan dengan gesture mouth/eating
+KATA,nasi
+KATA,roti
+KATA,mie
+KATA,daging
+KATA,ikan
+KATA,ayam
+KATA,telur
+KATA,buah
+KATA,sayur
+KATA,gula
+
+# ===== KATA-BENDA MINUMAN (5) =====
+# Minuman dengan gesture khusus
+KATA,air
+KATA,teh
+KATA,kopi
+KATA,susu
+KATA,jus
+
+# ===== KATA-BENDA BENDA (10) =====
+# Benda penting dengan gesture identik
+KATA,buku
+KATA,pensil
+KATA,kertas
+KATA,uang
+KATA,kartu
+KATA,tas
+KATA,jam
+KATA,komputer
+KATA,HP
+KATA,kamera
+
+# ===== KATA-BENDA TRANSPORTASI (7) =====
+# Alat transportasi dengan gesture gerakan
+KATA,mobil
+KATA,motor
+KATA,sepeda
+KATA,bus
+KATA,kereta
+KATA,pesawat
+KATA,kapal
+
+# ===== KATA-WAKTU (12) =====
+# Waktu dengan gesture temporal
+KATA,pagi
+KATA,siang
+KATA,sore
+KATA,malam
+KATA,hari
+KATA,malam hari
+KATA,kemarin
+KATA,hari ini
+KATA,besok
+KATA,sekarang
+KATA,nanti
+KATA,minggu
+
+# ===== KATA-SIFAT UKURAN (8) =====
+# Sifat ukuran dengan gesture size
+KATA,besar
+KATA,kecil
+KATA,panjang
+KATA,pendek
+KATA,tinggi
+KATA,rendah
+KATA,luas
+KATA,sempit
+
+# ===== KATA-SIFAT KUALITAS (12) =====
+# Sifat kualitas dengan gesture penilaian
+KATA,baik
+KATA,buruk
+KATA,bagus
+KATA,jelek
+KATA,bersih
+KATA,kotor
+KATA,rapi
+KATA,berantakan
+KATA,indah
+KATA,cantik
+KATA,menarik
+KATA,membosankan
+
+# ===== KATA-SIFAT SUHU (5) =====
+# Sifat suhu dengan gesture thermal
+KATA,panas
+KATA,dingin
+KATA,hangat
+KATA,sejuk
+KATA,gelap
+
+# ===== KATA-SIFAT JUMLAH (8) =====
+# Sifat jumlah dengan gesture quantity
+KATA,banyak
+KATA,sedikit
+KATA,semua
+KATA,separuh
+KATA,sebagian
+KATA,beberapa
+KATA,penuh
+KATA,kosong
+
+# ===== KATA-SIFAT WARNA (8) =====
+# Warna dengan gesture hand shape
+KATA,merah
+KATA,hijau
+KATA,biru
+KATA,putih
+KATA,hitam
+KATA,kuning
+KATA,coklat
+KATA,ungu
+
+# ===== KATA-EMOSI POSITIF (8) =====
+# Emosi positif dengan gesture wajah
+KATA,senang
+KATA,gembira
+KATA,puas
+KATA,bangga
+KATA,cinta
+KATA,percaya
+KATA,nyaman
+KATA,aman
+
+# ===== KATA-EMOSI NEGATIF (10) =====
+# Emosi negatif dengan gesture khusus
+KATA,sedih
+KATA,marah
+KATA,takut
+KATA,kecewa
+KATA,benci
+KATA,malu
+KATA,khawatir
+KATA,bingung
+KATA,stres
+KATA,cemas
+
+# ===== KATA-KONDISI FISIK (10) =====
+# Kondisi tubuh dengan gesture lokasi
+KATA,sakit
+KATA,sehat
+KATA,lelah
+KATA,capek
+KATA,pusing
+KATA,mual
+KATA,demam
+KATA,batuk
+KATA,pilek
+KATA,lapar
+
+# ===== IMBUHAN PREFIKS (6) =====
+# Awalan yang mengubah makna kata dasar - GESTURE UNIK per imbuhan
+KATA,me- (prefix)
+KATA,ber- (prefix)
+KATA,di- (prefix)
+KATA,ter- (prefix)
+KATA,pe- (prefix)
+KATA,se- (prefix)
+
+# ===== IMBUHAN SUFIKS (4) =====
+# Akhiran yang mengubah bentuk kata - GESTURE UNIK per imbuhan
+KATA,-kan (suffix)
+KATA,-i (suffix)
+KATA,-an (suffix)
+KATA,-nya (suffix)
+
+# ===== POSSESSIVE MARKERS (3) =====
+# Penanda kepemilikan - gesture khusus setelah kata benda
+KATA,-ku
+KATA,-mu
+KATA,-nya
+
+# ===== FRASA IDENTIK (25) =====
+# HANYA gesture dengan movement/ekspresi UNIK sendiri
+# BUKAN kombinasi kata & BUKAN ejaan huruf
+
+# Sapaan dengan ekspresi khusus
+FRASA,selamat pagi
+FRASA,selamat sore
+FRASA,apa kabar
+FRASA,terima kasih
+
+# Emosi/kondisi dengan gesture identik
+FRASA,tidak tahu
+FRASA,tidak mengerti
+FRASA,tidak apa-apa
+FRASA,sampai jumpa
+FRASA,maaf
+
+# Kebutuhan dasar dengan gesture khusus
+FRASA,saya lapar
+FRASA,saya haus
+FRASA,saya lelah
+FRASA,saya sakit
+
+# Kondisi tubuh lokasi-spesifik
+FRASA,sakit kepala
+FRASA,sakit perut
+FRASA,sakit gigi
+FRASA,sakit mata
+
+# Darurat
+FRASA,tolong
+FRASA,ada bahaya
+FRASA,panggil ambulan
+FRASA,saya tersesat
+
+# Transaksi
+FRASA,berapa harga
+FRASA,bayar tunai
+
+# Transportasi dengan gerakan khusus
+FRASA,naik bus
+FRASA,naik kereta
+FRASA,naik motor

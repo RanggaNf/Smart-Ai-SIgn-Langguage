@@ -1,0 +1,143 @@
+# PANDUAN SETUP UDP UNTUK SMART GLOVE DATA COLLECTION
+
+## LANGKAH-LANGKAH SETUP:
+
+### 1. SETUP ESP32 MASTER
+
+a. Buka file `master_udp.ino` di Arduino IDE
+
+b. **PENTING**: Ubah IP Target (IP PC Anda) di baris 21-22:
+   ```cpp
+   // GANTI dengan IP PC Anda di network yang sama
+   IPAddress targetIP(192, 168, 18, 100);  // <-- UBAH INI!
+   ```
+
+c. Cara mendapatkan IP PC Anda:
+   - Windows: Buka CMD, ketik `ipconfig`, cari "IPv4 Address"
+   - Linux/Mac: Buka terminal, ketik `ifconfig` atau `ip addr`
+   - Pastikan PC dan ESP32 di jaringan WiFi yang sama!
+
+d. Kredensial WiFi sudah diset:
+   - SSID: RANGGA12
+   - Password: 1rangga19%1
+   - Jika berbeda, ubah di baris 15-16
+
+e. Upload kode ke ESP32 Master
+
+f. Buka Serial Monitor (115200 baud), pastikan:
+   - ESP32 berhasil connect ke WiFi
+   - Muncul "WiFi connected!"
+   - Muncul IP Address ESP32
+   - Muncul "UDP started"
+
+
+### 2. SETUP PYTHON DATA COLLECTION
+
+a. Install library yang dibutuhkan (jika belum):
+   ```
+   pip install tkinter
+   ```
+   (tkinter biasanya sudah include di Python standard)
+
+b. Jalankan aplikasi Python:
+   ```
+   python data_collection_udp.py
+   ```
+
+c. Di aplikasi:
+   - Pastikan IP PC yang ditampilkan sesuai dengan yang Anda set di ESP32
+   - UDP Port default: 5000
+   - Klik "START UDP SERVER" untuk mulai mendengarkan
+
+
+### 3. VERIFIKASI KONEKSI
+
+a. Setelah UDP server berjalan di Python, perhatikan status:
+   - "WAITING DATA" (oranye) = Server jalan, belum terima data
+   - "ONLINE" (hijau) = Data dari ESP32 sudah diterima
+
+b. Jika status tetap "WAITING DATA":
+   - Pastikan ESP32 sudah connect ke WiFi (cek Serial Monitor)
+   - Pastikan Slave sudah kirim data ke Master (cek LED berkedip)
+   - Pastikan IP target di ESP32 sesuai IP PC
+   - Pastikan firewall tidak memblok port 5000
+
+
+### 4. TROUBLESHOOTING
+
+**Problem: ESP32 tidak connect ke WiFi**
+- Periksa SSID dan password
+- Pastikan router WiFi aktif
+- Cek jarak ESP32 ke router
+
+**Problem: Python tidak terima data**
+- Periksa IP target di ESP32 code (harus IP PC yang benar)
+- Cek firewall Windows: Allow port 5000 UDP
+- Pastikan PC dan ESP32 di network yang sama
+- Restart aplikasi Python dan ESP32
+
+**Problem: Koneksi sering putus**
+- Periksa kekuatan sinyal WiFi
+- Pastikan power supply ESP32 stabil
+- Hindari interferensi dari device lain
+
+**Problem: Data tidak lengkap**
+- Pastikan Slave sudah connect ke Master (cek ESP-NOW)
+- Periksa Serial Monitor Master untuk data dari Slave
+
+
+### 5. KEUNTUNGAN UDP vs SERIAL:
+
+✓ Tidak ada kabel USB yang bisa putus
+✓ ESP32 bisa bergerak bebas (wireless)
+✓ Lebih stabil untuk recording data lama
+✓ Bisa monitoring dari jauh
+✓ Multi-device support (bisa tambah glove lain ke sistem yang sama)
+
+
+### 6. CATATAN PENTING:
+
+- UDP Port: 5000 (bisa diubah di kedua file)
+- Data rate: 50Hz (20ms interval)
+- Format data sama dengan versi serial
+- PC dan ESP32 HARUS di network WiFi yang sama
+- Pastikan tidak ada aplikasi lain yang pakai port 5000
+
+
+### 7. TIPS OPTIMASI:
+
+- Gunakan WiFi 5GHz jika tersedia (lebih stabil)
+- Letakkan router dekat area recording
+- Matikan aplikasi yang menggunakan banyak bandwidth
+- Gunakan dedicated WiFi jika memungkinkan
+- Monitor RSSI (signal strength) di Serial Monitor
+
+
+## SEQUENCE NORMAL STARTUP:
+
+1. Upload code ke ESP32 Master
+2. ESP32 connect ke WiFi (lihat Serial Monitor)
+3. Slave kirim data ke Master via ESP-NOW
+4. Jalankan Python app
+5. Klik "START UDP SERVER"
+6. Status berubah "ONLINE" saat data diterima
+7. Mulai recording seperti biasa
+
+
+## STRUKTUR DATA UDP:
+
+Format yang dikirim sama dengan serial:
+```
+DATA|F:L0,L1,L2,L3,L4|A:Lx,Ly,Lz|G:Lx,Ly,Lz|F:R0,R1,R2,R3,R4|A:Rx,Ry,Rz|G:Rx,Ry,Rz|BAT:Lv,Rv
+```
+
+Dikirim via UDP setiap 20ms (50 packets/second)
+
+
+## SUPPORT:
+
+Jika ada masalah, cek:
+1. Serial Monitor ESP32 untuk debug info
+2. Activity Log di Python app
+3. Windows Event Viewer untuk firewall blocks
+4. WiFi router logs untuk connection issues

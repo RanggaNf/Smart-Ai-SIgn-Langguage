@@ -1,0 +1,83 @@
+================================================================================
+Overall Accuracy: 100.0%
+Deployment Ready: True
+Sentences >=80%: 10 / 10
+Avg Confidence: 0.9766
+Breakdown: perfect=10 good=0 fair=0 poor=0
+
+KALIMAT 1: 100% | Saya A-D-I
+  [BENAR] saya                 -> saya                 conf=0.9968
+  [BENAR] a                    -> a                    conf=0.9924
+  [BENAR] d                    -> d                    conf=0.9754
+  [BENAR] i                    -> i                    conf=0.9620
+KALIMAT 2: 100% | Rumah saya di Jalan Sudirma (5)
+  [BENAR] rumah                -> rumah                conf=0.9989
+  [BENAR] saya                 -> saya                 conf=0.9968
+  [BENAR] di                   -> di                   conf=0.9987
+  [BENAR] jalan                -> jalan                conf=0.9993
+  [BENAR] s                    -> s                    conf=0.9960
+  [BENAR] u                    -> u                    conf=0.9927
+  [BENAR] d                    -> d                    conf=0.9754
+  [BENAR] i                    -> i                    conf=0.9620
+  [BENAR] r                    -> r                    conf=0.9990
+  [BENAR] m                    -> m                    conf=0.9943
+  [BENAR] a                    -> a                    conf=0.9924
+  [BENAR] 5                    -> 5                    conf=0.9964
+KALIMAT 3: 100% | Tolong hubungi polisi, nomor 110
+  [BENAR] tolong               -> tolong               conf=0.9976
+  [BENAR] polisi               -> polisi               conf=0.9987
+  [BENAR] 1                    -> 1                    conf=0.9970
+  [BENAR] 1                    -> 1                    conf=0.9970
+  [BENAR] 0                    -> 0                    conf=0.8223
+KALIMAT 4: 100% | Saya tinggal di Jalan Mawar nomor 20
+  [BENAR] saya                 -> saya                 conf=0.9968
+  [BENAR] di                   -> di                   conf=0.9987
+  [BENAR] jalan                -> jalan                conf=0.9993
+  [BENAR] m                    -> m                    conf=0.9943
+  [BENAR] a                    -> a                    conf=0.9924
+  [BENAR] w                    -> w                    conf=0.9088
+  [BENAR] a                    -> a                    conf=0.9924
+  [BENAR] r                    -> r                    conf=0.9990
+  [BENAR] 20                   -> 20                   conf=0.9733
+KALIMAT 5: 100% | Harga ini berapa? 50 atau 100?
+  [BENAR] ini                  -> ini                  conf=0.9785
+  [BENAR] berapa               -> berapa               conf=0.9631
+  [BENAR] 50                   -> 50                   conf=0.7340
+  [BENAR] itu                  -> itu                  conf=0.9523
+  [BENAR] 100                  -> 100                  conf=0.9822
+KALIMAT 6: 100% | Kakak saya umur 20 tahun
+  [BENAR] kakak                -> kakak                conf=0.9830
+  [BENAR] saya                 -> saya                 conf=0.9968
+  [BENAR] 20                   -> 20                   conf=0.9733
+KALIMAT 7: 100% | Saya butuh uang 1000
+  [BENAR] saya                 -> saya                 conf=0.9968
+  [BENAR] butuh                -> butuh                conf=0.9961
+  [BENAR] uang                 -> uang                 conf=0.9995
+  [BENAR] 1000                 -> 1000                 conf=0.9990
+KALIMAT 8: 100% | Rumah sakit di Jalan Ahmad Yani nomor 100
+  [BENAR] rumah                -> rumah                conf=0.9989
+  [BENAR] sakit                -> sakit                conf=0.9953
+  [BENAR] di                   -> di                   conf=0.9987
+  [BENAR] jalan                -> jalan                conf=0.9993
+  [BENAR] a                    -> a                    conf=0.9924
+  [BENAR] h                    -> h                    conf=0.9818
+  [BENAR] m                    -> m                    conf=0.9943
+  [BENAR] a                    -> a                    conf=0.9924
+  [BENAR] d                    -> d                    conf=0.9754
+  [BENAR] 100                  -> 100                  conf=0.9822
+KALIMAT 9: 100% | Sekarang berapa? Sudah berapa?
+  [BENAR] sekarang             -> sekarang             conf=0.9990
+  [BENAR] berapa               -> berapa               conf=0.9631
+  [BENAR] berapa               -> berapa               conf=0.9631
+KALIMAT 10: 100% | Siapa kamu? Ejaan: B-U-D-I, rumah 50
+  [BENAR] siapa                -> siapa                conf=0.9902
+  [BENAR] kamu                 -> kamu                 conf=0.9856
+  [BENAR] b                    -> b                    conf=0.9984
+  [BENAR] u                    -> u                    conf=0.9927
+  [BENAR] d                    -> d                    conf=0.9754
+  [BENAR] i                    -> i                    conf=0.9620
+  [BENAR] rumah                -> rumah                conf=0.9989
+  [BENAR] 50                   -> 50                   conf=0.7340
+
+================================================================================
+TARGET >80% TERCAPAI!

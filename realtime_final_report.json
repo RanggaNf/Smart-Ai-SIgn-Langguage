@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "test_type": "Real Validation Data",
+    "total_sentences": 10,
+    "total_gestures": 71,
+    "total_correct": 66,
+    "overall_accuracy": 0.9295774647887324
+  },
+  "per_sentence_results": [
+    {
+      "sentence_id": 1,
+      "kalimat": "Saya A-N-D-I",
+      "total_gestures": 5,
+      "accuracy": 0.8,
+      "avg_confidence": 

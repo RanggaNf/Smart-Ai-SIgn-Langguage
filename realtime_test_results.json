@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "test_timestamp": "2026-04-03T11:10:01.982918",
+    "total_sentences": 10,
+    "total_gestures": 74,
+    "total_correct": 0,
+    "overall_accuracy": 0.0
+  },
+  "per_sentence": [
+    {
+      "sentence_id": 1,
+      "kalimat": "Nama saya A-N-D-I",
+      "total_gestures": 7,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 2,
+      "kalimat": "Rumah saya di Jalan Sudirman nomor 5",
+      "total_gestures": 13,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 3,
+      "kalimat": "Tolong hubungi polisi, nomor 110",
+      "total_gestures": 5,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 4,
+      "kalimat": "Saya tinggal di Jalan Mawar nomor 20",
+      "total_gestures": 9,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 5,
+      "kalimat": "Harga ini berapa? 50 atau 100?",
+      "total_gestures": 5,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 6,
+      "kalimat": "Nama kakak saya R-I-N-I, umur 20 tahun",
+      "total_gestures": 7,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 7,
+      "kalimat": "Saya butuh uang 1000",
+      "total_gestures": 4,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 8,
+      "kalimat": "Rumah sakit di Jalan A-H-M-A-D Yani nomor 100",
+      "total_gestures": 10,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 9,
+      "kalimat": "Jam berapa sekarang? Jam 8?",
+      "total_gestures": 5,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    },
+    {
+      "sentence_id": 10,
+      "kalimat": "Siapa nama kamu? Ejaan: B-U-D-I, nomor rumah 50",
+      "total_gestures": 9,
+      "accuracy": 0.0,
+      "avg_confidence": 0,
+      "passed_threshold": 0,
+      "details": []
+    }
+  ]
+}

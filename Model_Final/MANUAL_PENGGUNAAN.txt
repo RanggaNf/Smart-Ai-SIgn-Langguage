@@ -1,0 +1,30 @@
+PANDUAN IMPLEMENTASI GESTURE RECOGNITION (TCN MODEL)
+====================================================
+
+1. MODEL UTAMA
+   - File: gesture_model_int8.tflite
+   - Format: TFLite (Optimized Float16)
+   - Input Shape: [1, 80, 66] (80 frames, 66 features per frame)
+   - Output: 143 probabilities (Softmax)
+
+2. STRUKTUR FITUR (66 Features)
+   - Frame sensor harus dikirim berurutan:
+     [0:22]  -> Raw Sensor Values (sesuai urutan CSV)
+     [22:44] -> Delta (Perubahan dari frame sebelumnya)
+     [44:66] -> Acceleration (Perubahan dari delta)
+
+3. LOGIKA REALTIME (Sliding Window)
+   - Gunakan Buffer/Queue untuk menampung 80 frame terakhir.
+   - Lakukan inferensi setiap Stride (disarankan 150ms atau 15 frame).
+   - Ambil hasil prediksi hanya jika confidence > 0.5.
+
+4. KALIBRASI SENSOR
+   - Gunakan nilai 'scaler' di model_metadata.json untuk normalisasi.
+   - Rumus: (x - mean) / scale
+
+5. SARAN PERFORMA
+   - Gunakan GpuDelegate atau NNAPI untuk kecepatan maksimal.
+   - Latensi diukur pada CPU hanya ~0.5ms per inferensi.
+
+Dibuat oleh: Core Subagent AI
+Tanggal: 30 Maret 2026

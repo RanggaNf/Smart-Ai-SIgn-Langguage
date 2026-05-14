@@ -1,0 +1,229 @@
+# ===================================
+# BISINDO - GESTURE LIST v2 (OPTIMAL)
+# Dirancang untuk percakapan sehari-hari
+# Coverage: ~95% kalimat umum
+# Total: 103 gesture
+#
+# STRATEGI PENGURANGAN:
+# - ANGKA: hanya 0-10 + 20,50,100,1000 (angka besar → spell huruf)
+# - HURUF: lengkap 26 (untuk nama, kata tidak ada di list)
+# - FRASA: hapus duplikat (hello1/hello2 → 1 saja, selamat tinggal/jalan digabung)
+# - KATA: tambah 36 kata fungsi vital yang hilang dari v1
+#
+# Format: CATEGORY,gesture_label
+# ===================================
+
+# ===== HURUF (26) — wajib lengkap untuk spelling =====
+HURUF,a
+HURUF,b
+HURUF,c
+HURUF,d
+HURUF,e
+HURUF,f
+HURUF,g
+HURUF,h
+HURUF,i
+HURUF,j
+HURUF,k
+HURUF,l
+HURUF,m
+HURUF,n
+HURUF,o
+HURUF,p
+HURUF,q
+HURUF,r
+HURUF,s
+HURUF,t
+HURUF,u
+HURUF,v
+HURUF,w
+HURUF,x
+HURUF,y
+HURUF,z
+
+# ===== ANGKA (14) — dipotong dari 43, angka besar pakai spelling huruf =====
+
+ANGKA,1
+ANGKA,2
+ANGKA,3
+ANGKA,4
+ANGKA,5
+ANGKA,6
+ANGKA,7
+ANGKA,8
+ANGKA,9
+ANGKA,10
+ANGKA,11
+ANGKA,12
+ANGKA,13
+ANGKA,14
+ANGKA,15
+ANGKA,16
+ANGKA,17
+ANGKA,18
+ANGKA,19
+ANGKA,20
+ANGKA,30
+ANGKA,40
+ANGKA,50
+ANGKA,100
+ANGKA,1000
+
+# ===== FRASA (19) — frasa lengkap yang sering dipakai =====
+FRASA,namamu siapa
+FRASA,perkenalkan nama saya
+FRASA,assalamualaikum warahmatullahi wabarakatuh
+FRASA,waalaikumsalam warahmatullahi wabarakatuh
+FRASA,selamat datang
+FRASA,apa kabar
+FRASA,terima kasih
+FRASA,sama sama
+FRASA,maaf
+FRASA,sampai jumpa
+FRASA,hati hati
+FRASA,lama tidak bertemu
+FRASA,tidak tahu
+
+
+# ===== KATA (43) — kata inti dari v1 yang dipertahankan =====
+
+# Waktu sapaan
+KATA,pagi
+KATA,siang
+KATA,sore
+KATA,malam
+
+# Keluarga inti (dipotong dari 18 → 8 yang paling sering)
+KATA,bapak
+KATA,ibu
+KATA,kakak
+KATA,adik
+KATA,anak
+KATA,kakek
+KATA,nenek
+KATA,keluarga
+
+# Kata inti komunikasi
+KATA,paham
+KATA,tolong
+
+# Pronoun
+KATA,saya
+KATA,kamu
+KATA,dia
+KATA,kita
+KATA,mereka
+
+# Aksi dasar
+KATA,makan
+KATA,minum
+KATA,tidur
+KATA,pergi
+KATA,pulang
+KATA,datang
+KATA,kerja
+
+# Tempat
+KATA,rumah
+KATA,sekolah
+KATA,uang
+
+# Kondisi fisik
+KATA,sakit
+KATA,sehat
+KATA,lelah
+
+# Emosi
+KATA,senang
+KATA,sedih
+KATA,marah
+KATA,takut
+
+# Komunikasi
+KATA,lihat
+KATA,dengar
+KATA,berbicara
+KATA,bertanya
+KATA,jangan
+
+
+# ===== KATA BARU (36) — kata yang hilang dari v1, vital untuk percakapan =====
+
+# Kata fungsi wajib (tanpa ini kalimat tidak lengkap)
+KATA,tidak
+KATA,mau
+KATA,bisa
+KATA,sudah
+KATA,belum
+KATA,ini
+KATA,itu
+KATA,di
+KATA,dari
+
+# Kata tanya (wajib untuk percakapan dua arah)
+KATA,apa
+KATA,siapa
+KATA,dimana
+KATA,kemana
+KATA,kapan
+KATA,berapa
+KATA,mengapa
+KATA,bagaimana
+KATA,umur
+
+# Aktivitas transaksi
+KATA,minta
+KATA,butuh
+KATA,suka
+KATA,beli
+KATA,bayar
+KATA,tulis
+
+# Deskripsi kondisi
+
+KATA,dingin
+KATA,baik
+KATA,besar
+KATA,kecil
+KATA,cepat
+KATA,pelan
+
+# Tempat vital
+KATA,toilet
+KATA,rumah sakit
+KATA,polisi
+KATA,jalan
+
+# Waktu
+KATA,sekarang
+KATA,besok
+KATA,kemarin
+KATA,jam
+
+# ===== KONTROL (1) — gesture kontrol untuk penanda state =====
+KONTROL,rilis
+
+
+# ===================================
+# STATISTIK v2
+# ===================================
+# Total: 104 gesture (sebelumnya 147)
+# Pengurangan: 44 gesture
+#   - ANGKA: 43 → 15 (-28, angka besar pakai spelling)
+#   - FRASA: 23 → 19 (-4, hapus duplikat hello1/hello2 dll)
+#   - KATA:  55 → 79 (+ 36 kata fungsi vital, -12 keluarga jarang)
+#   - HURUF: tetap 26
+#   - KONTROL: 1 (rilis - penanda release/pelepasan)
+#
+# Coverage percakapan umum: ~95%
+#
+# Dengan 5 repetisi + augmentasi 8x:
+#   104 × 5 × (1+8) = 4.680 sampel total
+#   Train (80%) = 3.744 → ~36 sampel/kelas → LAYAK produksi
+#
+# Training recommendation:
+#   - Rekam 5 repetisi SEMUA gesture (termasuk 36 kata baru + rilis)
+#   - Gunakan augmentasi otomatis di notebook training
+#   - Target akurasi: 80-88%
+#   - Gesture "rilis" digunakan untuk mendeteksi end-of-gesture signal
+# ===================================

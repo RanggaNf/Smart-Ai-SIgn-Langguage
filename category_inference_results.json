@@ -1,0 +1,55 @@
+{
+  "total": 6,
+  "correct": 2,
+  "accuracy": 33.33333333333333,
+  "results": [
+    {
+      "file": "0_rep1_20260403_142813.csv",
+      "expected": "0",
+      "predicted": "0",
+      "category": "angka",
+      "confidence": 0.15032687783241272,
+      "status": "\u2713"
+    },
+    {
+      "file": "1_rep1_20260403_142825.csv",
+      "expected": "1",
+      "predicted": "0",
+      "category": "angka",
+      "confidence": 0.12736831605434418,
+      "status": "\u2717"
+    },
+    {
+      "file": "1_rep2_20260403_142835.csv",
+      "expected": "1",
+      "predicted": "q",
+      "category": "huruf",
+      "confidence": 0.11913854628801346,
+      "status": "\u2717"
+    },
+    {
+      "file": "2_rep1_20260403_142850.csv",
+      "expected": "2",
+      "predicted": "0",
+      "category": "angka",
+      "confidence": 0.11367133259773254,
+      "status": "\u2717"
+    },
+    {
+      "file": "3_rep1_20260403_142901.csv",
+      "expected": "3",
+      "predicted": "3",
+      "category": "angka",
+      "confidence": 0.13747431337833405,
+      "status": "\u2713"
+    },
+    {
+      "file": "4_rep1_20260403_142939.csv",
+      "expected": "4",
+      "predicted": "5",
+      "category": "angka",
+      "confidence": 0.0995272696018219,
+      "status": "\u2717"
+    }
+  ]
+}

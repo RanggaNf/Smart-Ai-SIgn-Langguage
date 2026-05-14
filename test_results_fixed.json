@@ -1,0 +1,15 @@
+{
+  "total_validation_samples": 137,
+  "total_gesture_classes": 136,
+  "overall_accuracy_pct": 95.62043795620438,
+  "best_accuracy_pct": 100.0,
+  "worst_accuracy_pct": 0.0,
+  "mean_accuracy_pct": 95.58823529411765,
+  "median_accuracy_pct": 100.0,
+  "stdev_accuracy_pct": 20.53564712318962,
+  "avg_confidence": 0.9436748027801514,
+  "gestures_100pct_accuracy": 130,
+  "gestures_0pct_accuracy": 6,
+  "confidence_threshold": 0.72,
+  "passed_confidence_filter": 130
+}

@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-04-03T14:42:47.738964",
+  "model": "best_gesture_model.keras",
+  "total_files": 6,
+  "correct": 0,
+  "accuracy": 0.0,
+  "predictions": [
+    {
+      "file": "0_rep1_20260403_142813.csv",
+      "expected": 0,
+      "predicted": 77,
+      "confidence": 0.911759078502655,
+      "correct": 0,
+      "windows": 5
+    },
+    {
+      "file": "1_rep1_20260403_142825.csv",
+      "expected": 1,
+      "predicted": 77,
+      "confidence": 0.9917874932289124,
+      "correct": 0,
+      "windows": 5
+    },
+    {
+      "file": "1_rep2_20260403_142835.csv",
+      "expected": 1,
+      "predicted": 77,
+      "confidence": 0.9857698082923889,
+      "correct": 0,
+      "windows": 5
+    },
+    {
+      "file": "2_rep1_20260403_142850.csv",
+      "expected": 2,
+      "predicted": 77,
+      "confidence": 0.9770525097846985,
+      "correct": 0,
+      "windows": 5
+    },
+    {
+      "file": "3_rep1_20260403_142901.csv",
+      "expected": 3,
+      "predicted": 77,
+      "confidence": 0.9712932109832764,
+      "correct": 0,
+      "windows": 5
+    },
+    {
+      "file": "4_rep1_20260403_142939.csv",
+      "expected": 4,
+      "predicted": 77,
+      "confidence": 0.7753758430480957,
+      "correct": 0,
+      "windows": 5
+    }
+  ]
+}

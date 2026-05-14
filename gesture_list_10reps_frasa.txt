@@ -1,0 +1,31 @@
+# ===================================
+# GESTURE LIST - 10 REPETITIONS (FRASA ONLY)
+# Format: CATEGORY,gesture_label
+# Total: 13 gestures
+# Repetition per gesture: 10x
+# Total samples: 13 × 10 = 130
+# ===================================
+
+FRASA,namamu siapa
+FRASA,perkenalkan nama saya
+FRASA,assalamualaikum warahmatullahi wabarakatuh
+FRASA,waalaikumsalam warahmatullahi wabarakatuh
+FRASA,selamat datang
+FRASA,apa kabar
+FRASA,terima kasih
+FRASA,sama sama
+FRASA,maaf
+FRASA,sampai jumpa
+FRASA,hati hati
+FRASA,lama tidak bertemu
+FRASA,tidak tahu
+
+# ===================================
+# STATISTICS
+# ===================================
+# Total gestures: 13
+# Repetition per gesture: 10x
+# Total samples: 130
+# Recording time per gesture: ~50 menit
+# Total recording time: ~10.8 jam
+# ===================================
