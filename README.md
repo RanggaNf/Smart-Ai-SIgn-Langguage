@@ -179,7 +179,7 @@ Project ini dibuat untuk keperluan **portfolio** dan **pembelajaran**.
 ### Mohamad Rangga Nur Faizin
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RanggaNf)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rangganf)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rangfaziii)
 
 🚀 Android Developer | IoT Engineer | Backend Developer | ML Enthusiast
 
